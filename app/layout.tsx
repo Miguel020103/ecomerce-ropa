@@ -4,6 +4,8 @@ import "./globals.css"
 import { CartProvider } from "@/lib/cart-context"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import { SessionProvider } from "next-auth/react"
+import { Toaster } from "sonner"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -20,11 +22,19 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.className}>
-        <CartProvider>
-          <Navbar />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
-        </CartProvider>
+        <SessionProvider>
+          <CartProvider>
+            <Navbar />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+            <Toaster 
+              position="bottom-right" 
+              richColors 
+              closeButton 
+              duration={3000}
+            />
+          </CartProvider>
+        </SessionProvider>
       </body>
     </html>
   )
