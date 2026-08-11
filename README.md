@@ -46,6 +46,22 @@ Proyecto orientado a demostrar un flujo completo de tienda online: catálogo de 
 
 ---
 
+## Credenciales de demostración
+
+| Rol     | Acceso                    | Contraseña |
+|---------|---------------------------|------------|
+| Usuario | `demo@modaurban.com`      | `123456`   |
+| Admin   | Panel de administración   | `admin123` |
+
+---
+
+## Autor
+
+**Miguel González**  
+Desarrollador Frontend
+
+---
+
 ## Instalación
 
 ```bash
@@ -62,17 +78,3 @@ cp .env.example .env.local
 
 # Ejecutar en desarrollo
 npm run dev
-
-## Credenciales de demostración
-
-| Rol     | Acceso                    | Contraseña |
-|---------|---------------------------|------------|
-| Usuario | `demo@modaurban.com`      | `123456`   |
-| Admin   | Panel de administración   | `admin123` |
-
----
-
-## Autor
-
-**Miguel González**  
-Desarrollador Frontend
