@@ -101,6 +101,15 @@ export default function LoginPage() {
             Regístrate
           </Link>
         </p>
+
+        <div className="mt-10 pt-6 border-t border-gray-100 text-center">
+          <Link
+            href="/admin"
+            className="text-xs text-gray-400 hover:text-gray-600 transition"
+          >
+            Acceder al panel de administración
+          </Link>
+        </div>
       </div>
     </div>
   )

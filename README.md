@@ -1,9 +1,14 @@
 # Moda Urbana — E-commerce de Ropa
 
-Tienda online de ropa minimalista desarrollada con **Next.js**, **TypeScript** y **Tailwind CSS**.  
-Proyecto de portafolio orientado a demostrar un flujo completo de e-commerce moderno.
+Tienda online de ropa minimalista desarrollada con **Next.js**, **TypeScript** y **Tailwind CSS**.
 
-🔗 **Demo en vivo:** _(agregar link de Vercel cuando lo despliegues)_
+Proyecto de portafolio que demuestra un flujo completo de e-commerce moderno: catálogo, carrito, autenticación, checkout y panel de administración.
+
+---
+
+## Demo en vivo
+
+🔗 **[Ver demo](https://tu-proyecto.vercel.app)** *(se actualizará después del despliegue)*
 
 ---
 
@@ -12,9 +17,10 @@ Proyecto de portafolio orientado a demostrar un flujo completo de e-commerce mod
 - Catálogo de productos con página de detalle
 - Selección de talla y color
 - Carrito de compras persistente (localStorage)
-- Cálculo de envío (gratis a partir de $150.000)
+- Cálculo de envío
 - Checkout completo con simulación de pasarela de pagos (Wompi)
 - Autenticación de usuarios (Login / Registro)
+- **Panel de administración** (gestión de productos)
 - Diseño responsive y minimalista
 - Notificaciones al agregar productos al carrito
 
@@ -22,12 +28,12 @@ Proyecto de portafolio orientado a demostrar un flujo completo de e-commerce mod
 
 ## Tecnologías
 
-- **Next.js 16** (App Router)
-- **React 19** + **TypeScript**
-- **Tailwind CSS 4**
-- **Auth.js (NextAuth v5)** — autenticación
-- **Lucide React** — iconos
-- Context API — estado del carrito
+- **Next.js** (App Router)
+- **React** + **TypeScript**
+- **Tailwind CSS**
+- **Auth.js (NextAuth)**
+- **Lucide React**
+- Context API
 
 ---
 
@@ -35,26 +41,23 @@ Proyecto de portafolio orientado a demostrar un flujo completo de e-commerce mod
 
 1. El usuario navega el catálogo y ve el detalle del producto
 2. Selecciona talla y color → agrega al carrito
-3. Revisa el carrito (con cálculo de envío)
+3. Revisa el carrito
 4. Completa el formulario de checkout
-5. Realiza el pago simulado con Wompi
+5. Realiza el pago simulado
 6. Recibe confirmación del pedido
 
 ---
 
-## Instalación y uso
+## Instalación
 
 ```bash
-# Clonar el repositorio
 git clone https://github.com/Miguel020103/ecomerce-ropa.git
 cd ecomerce-ropa
-
-# Instalar dependencias
 npm install
-
-# Variables de entorno
-cp .env.example .env.local
-# (o crea .env.local con AUTH_SECRET y AUTH_URL)
-
-# Correr en desarrollo
 npm run dev
+
+## Autor
+
+**Miguel González**  
+Desarrollador Frontend  
+Proyecto de portafolio — 2026
