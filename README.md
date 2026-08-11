@@ -1,26 +1,22 @@
-# Moda Urbana — E-commerce de Ropa
+# Moda Urbana
 
-Tienda online de ropa minimalista desarrollada con **Next.js**, **TypeScript** y **Tailwind CSS**.
+E-commerce de ropa minimalista desarrollado con **Next.js**, **TypeScript** y **Tailwind CSS**.
 
-Proyecto de portafolio que demuestra un flujo completo de e-commerce moderno: catálogo, carrito, autenticación, checkout y panel de administración.
+Proyecto orientado a demostrar un flujo completo de tienda online: catálogo de productos, carrito, autenticación, checkout y panel de administración.
 
----
-
-## Demo en vivo
-
-🔗 **[Ver demo](https://tu-proyecto.vercel.app)** *(se actualizará después del despliegue)*
+🔗 **[Ver demo en vivo](https://ecomerce-ropa.vercel.app)**
 
 ---
 
 ## Características
 
-- Catálogo de productos con página de detalle
-- Selección de talla y color
+- Catálogo de productos con filtros por categoría
+- Página de detalle con selección de talla y color
 - Carrito de compras persistente (localStorage)
-- Cálculo de envío
-- Checkout completo con simulación de pasarela de pagos (Wompi)
+- Cálculo de envío (gratis a partir de $150.000)
+- Checkout con simulación de pasarela de pagos (Wompi)
 - Autenticación de usuarios (Login / Registro)
-- **Panel de administración** (gestión de productos)
+- Panel de administración básico
 - Diseño responsive y minimalista
 - Notificaciones al agregar productos al carrito
 
@@ -28,22 +24,24 @@ Proyecto de portafolio que demuestra un flujo completo de e-commerce moderno: ca
 
 ## Tecnologías
 
-- **Next.js** (App Router)
-- **React** + **TypeScript**
-- **Tailwind CSS**
-- **Auth.js (NextAuth)**
-- **Lucide React**
-- Context API
+| Tecnología                    | Uso                        |
+|-------------------------------|----------------------------|
+| **Next.js 16**                | Framework (App Router)     |
+| **React 19** + **TypeScript** | Frontend tipado            |
+| **Tailwind CSS 4**            | Estilos                    |
+| **Auth.js (NextAuth v5)**     | Autenticación              |
+| **Lucide React**              | Iconos                     |
+| **Context API**               | Estado del carrito         |
 
 ---
 
 ## Flujo de compra
 
-1. El usuario navega el catálogo y ve el detalle del producto
+1. El usuario navega el catálogo y entra al detalle del producto
 2. Selecciona talla y color → agrega al carrito
-3. Revisa el carrito
+3. Revisa el carrito (con cálculo de envío)
 4. Completa el formulario de checkout
-5. Realiza el pago simulado
+5. Realiza el pago simulado con Wompi
 6. Recibe confirmación del pedido
 
 ---
@@ -51,13 +49,30 @@ Proyecto de portafolio que demuestra un flujo completo de e-commerce moderno: ca
 ## Instalación
 
 ```bash
+# Clonar el repositorio
 git clone https://github.com/Miguel020103/ecomerce-ropa.git
 cd ecomerce-ropa
+
+# Instalar dependencias
 npm install
+
+# Variables de entorno
+cp .env.example .env.local
+# Configura AUTH_SECRET y AUTH_URL en .env.local
+
+# Ejecutar en desarrollo
 npm run dev
+
+## Credenciales de demostración
+
+| Rol     | Acceso                    | Contraseña |
+|---------|---------------------------|------------|
+| Usuario | `demo@modaurban.com`      | `123456`   |
+| Admin   | Panel de administración   | `admin123` |
+
+---
 
 ## Autor
 
 **Miguel González**  
-Desarrollador Frontend  
-Proyecto de portafolio — 2026
+Desarrollador Frontend
